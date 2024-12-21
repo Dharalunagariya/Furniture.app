@@ -10,11 +10,21 @@ class Homescreen extends StatefulWidget {
 }
 
 class _HomescreenState extends State<Homescreen> {
-  List<String> text = [
+  List<String> comman = [
     'Black Simple Lamp',
+  ];
+  List<String> comman0 = [
+    '\$12',
+  ];
+  List<String> comman2 = [
     'Minimal Stand',
-    'Coffee Chair',
-    'Simple Desk',
+  ];
+
+  List<String> comman1 = [
+    "Font/images/Media (7).png",
+    "Font/images/Media (3).png",
+    "Font/images/Media (4).png",
+    "Font/images/Media (5).png",
   ];
   @override
   Widget build(BuildContext context) {
@@ -184,16 +194,38 @@ class _HomescreenState extends State<Homescreen> {
                 ),
               ],
             ),
-            // GridView.builder(
-            //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            //       crossAxisCount: 2,
-            //       mainAxisSpacing: 16,
-            //       crossAxisSpacing: 21,
-            //     ),
-            //     itemCount: 4,
-            //     itemBuilder: (context, index) {
-            //       return Card();
-            //     })
+            Expanded(
+              child: GridView.builder(
+                  itemCount: 4,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisExtent: 300,
+                    mainAxisSpacing: 15,
+                    crossAxisSpacing: 15,
+                  ),
+                  itemBuilder: (context, index) {
+                    return Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'images/Media (12).png',
+                          ),
+                          CommanText(
+                            text: '  Black Simple Lamp',
+                            color: Colors.black,
+                            fontSize: 14,
+                          ),
+                          CommanText(
+                            text: '  \$12.00',
+                            color: Colors.black,
+                            fontSize: 14,
+                          ),
+                        ],
+                      ),
+                    );
+                  }),
+            ),
           ],
         ),
       ),

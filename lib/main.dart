@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_app/view/Home/Homescreen.dart';
 import 'package:furniture_app/view/Login/Login.dart';
+import 'package:furniture_app/view/Navigation/Navigation_bar.dart';
 import 'package:furniture_app/view/Sign%20up/Signup.dart';
 import 'package:furniture_app/view/onboarding/onboarding_screen.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Homescreen(),
+      home: NavigationBarscreen(),
     );
   }
 }
