@@ -21,7 +21,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: NavigationBarscreen(),
+      // home: NavigationBarscreen(),
+      initialRoute: 'onboarding',
+      routes: {
+        'onboarding': (context) => OnboardingScreen(),
+        'login': (context) => Login(),
+        'signup': (context) => Signup(),
+        'navigation': (context) => NavigationBarscreen(),
+      },
     );
   }
 }

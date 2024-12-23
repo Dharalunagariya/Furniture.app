@@ -85,10 +85,11 @@ class _SignupState extends State<Signup> {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return Homescreen();
-                  }));
-                  log('message');
+                  // Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  //   return Homescreen();
+                  // }));
+                  // log('message');
+                  Navigator.pushNamed(context, 'navigation');
                 },
                 child: Container(
                   height: 56,

@@ -54,10 +54,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   width: 311,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) {
-                        return Login();
-                      }));
+                      // Navigator.push(context,
+                      //     MaterialPageRoute(builder: (context) {
+                      //   return Login();
+                      // }));
+                      Navigator.pushNamed(context, 'login');
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Color(0xff242424),
