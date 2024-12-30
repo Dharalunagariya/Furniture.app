@@ -74,7 +74,6 @@ class _LoginState extends State<Login> {
                   // Navigator.push(context, MaterialPageRoute(builder: (context) {
                   //   return Signup();
                   // }));
-                  Navigator.pushNamed(context, 'signup');
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xff242424),
@@ -92,11 +91,16 @@ class _LoginState extends State<Login> {
             SizedBox(
               height: 16,
             ),
-            CommanText1(
-              text: AppText.boardingtext6,
-              fontSize: 16,
-              weight: FontWeight.w400,
-              color: Color(0xff303030),
+            InkWell(
+              onTap: () {
+                Navigator.pushNamed(context, 'signup');
+              },
+              child: CommanText1(
+                text: AppText.boardingtext6,
+                fontSize: 16,
+                weight: FontWeight.w400,
+                color: Color(0xff303030),
+              ),
             ),
           ],
         ),

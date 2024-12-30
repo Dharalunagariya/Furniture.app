@@ -14,11 +14,13 @@ class OnboardingScreen extends StatefulWidget {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
     return Scaffold(
         body: Column(
       children: [
         Container(
-          height: 843,
+          height: 0.843 * height,
           width: double.infinity,
           decoration: BoxDecoration(
             image: DecorationImage(
@@ -50,8 +52,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ),
                 Spacer(),
                 SizedBox(
-                  height: 54,
-                  width: 311,
+                  height: 0.054 * height,
+                  width: 0.311 * width,
                   child: ElevatedButton(
                     onPressed: () {
                       // Navigator.push(context,

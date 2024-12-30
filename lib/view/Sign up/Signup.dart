@@ -19,7 +19,7 @@ class Signup extends StatefulWidget {
 class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+        return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(
           top: 64,

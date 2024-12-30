@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:furniture_app/res/comman/commantext.dart';
 import 'package:furniture_app/res/constant/App_text.dart';
 
@@ -12,22 +13,27 @@ class Homescreen extends StatefulWidget {
 class _HomescreenState extends State<Homescreen> {
   List<String> comman = [
     'Black Simple Lamp',
+    'Minimal Stand',
+    'Coffee Chair',
+    'Simple Desk',
   ];
   List<String> comman0 = [
     '\$12',
-  ];
-  List<String> comman2 = [
-    'Minimal Stand',
+    '\$25',
+    '\$12',
+    '\$12',
   ];
 
-  List<String> comman1 = [
-    "Font/images/Media (7).png",
-    "Font/images/Media (3).png",
-    "Font/images/Media (4).png",
-    "Font/images/Media (5).png",
+  List<String> images = [
+    'images/Media (17).png',
+    'images/Media (18).png',
+    'images/Media (20).png',
+    'images/Media (23).png',
   ];
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
     return DefaultTabController(
       length: 5,
       child: Scaffold(
@@ -76,6 +82,8 @@ class _HomescreenState extends State<Homescreen> {
                     Container(
                       height: 44,
                       width: 44,
+                      // height: 0.044 * height,
+                      // width: 0.044 * width,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         color: Color(0xff242424),
@@ -200,28 +208,37 @@ class _HomescreenState extends State<Homescreen> {
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     mainAxisExtent: 300,
-                    mainAxisSpacing: 15,
-                    crossAxisSpacing: 15,
+                    // mainAxisSpacing: 15,
+                    // crossAxisSpacing: 15,
                   ),
                   itemBuilder: (context, index) {
-                    return Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'images/Media (12).png',
-                          ),
-                          CommanText(
-                            text: '  Black Simple Lamp',
-                            color: Colors.black,
-                            fontSize: 14,
-                          ),
-                          CommanText(
-                            text: '  \$12.00',
-                            color: Colors.black,
-                            fontSize: 14,
-                          ),
-                        ],
+                    return Padding(
+                      padding: const EdgeInsets.only(
+                        top: 20,
+                        left: 16,
+                        right: 24,
+                      ),
+                      child: Container(
+                        width: 157,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image.asset(
+                              images[index],
+                              fit: BoxFit.fill,
+                            ),
+                            CommanText(
+                              text: comman[index],
+                              color: Colors.black,
+                              fontSize: 14,
+                            ),
+                            CommanText(
+                              text: comman0[index],
+                              color: Colors.black,
+                              fontSize: 14,
+                            ),
+                          ],
+                        ),
                       ),
                     );
                   }),
