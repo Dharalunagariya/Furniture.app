@@ -1,6 +1,7 @@
 import 'package:awesome_bottom_bar/awesome_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:furniture_app/view/Home/Homescreen.dart';
+import 'package:furniture_app/view/Notificationscreen/Notification.dart';
 import 'package:furniture_app/view/Product/Productscreen.dart';
 
 List<TabItem> items = [
@@ -25,7 +26,7 @@ class _NavigationBarscreenState extends State<NavigationBarscreen> {
       body: [
         Homescreen(),
         Productscreen(),
-        Text('notifition'),
+        Notificationscreen(),
         Text('person'),
       ][visit],
       bottomNavigationBar: Container(

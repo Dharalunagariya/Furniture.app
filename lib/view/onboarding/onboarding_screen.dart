@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:furniture_app/res/comman/commantext.dart';
 import 'package:furniture_app/res/constant/App_image.dart';
 import 'package:furniture_app/res/constant/App_text.dart';
-import 'package:furniture_app/view/Login/Login.dart';
+
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -20,11 +20,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         body: Column(
       children: [
         Container(
-          height: 0.843 * height,
+          height: 0.999 * height,
           width: double.infinity,
           decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage(AppImage.boardingimage), fit: BoxFit.fill),
+                image: AssetImage(AppImage.boardingimage), fit: BoxFit.cover),
           ),
           child: Padding(
             padding: const EdgeInsets.only(
@@ -53,7 +53,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 Spacer(),
                 SizedBox(
                   height: 0.054 * height,
-                  width: 0.311 * width,
+                  width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
                       // Navigator.push(context,
