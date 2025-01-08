@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:furniture_app/view/Home/Homescreen.dart';
 import 'package:furniture_app/view/Notificationscreen/Notification.dart';
 import 'package:furniture_app/view/Product/Productscreen.dart';
+import 'package:furniture_app/view/Profile/Profile.dart';
 
 List<TabItem> items = [
   TabItem(icon: (Icons.home)),
@@ -27,7 +28,7 @@ class _NavigationBarscreenState extends State<NavigationBarscreen> {
         Homescreen(),
         Productscreen(),
         Notificationscreen(),
-        Text('person'),
+        Profilescreen(),
       ][visit],
       bottomNavigationBar: Container(
         // height:,
