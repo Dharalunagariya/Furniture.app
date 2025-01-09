@@ -84,10 +84,14 @@ class _ProfilescreenState extends State<Profilescreen> {
                           weight: FontWeight.w600,
                           color: Color(0xff242424),
                         ),
-                        Expanded(
-                            child: Icon(
-                          Icons.arrow_forward_ios,
-                        )),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 230,
+                          ),
+                          child: Icon(
+                            Icons.arrow_forward_ios,
+                          ),
+                        ),
                       ],
                     ),
                     SizedBox(
@@ -102,7 +106,203 @@ class _ProfilescreenState extends State<Profilescreen> {
                   ],
                 ),
               ),
-            )
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+              height: 80,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Color(0xffFFFFFF),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 18,
+                  left: 19,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        CommanText(
+                          text: 'Shipping Addresses',
+                          fontSize: 18,
+                          weight: FontWeight.w600,
+                          color: Color(0xff242424),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 135,
+                          ),
+                          child: Icon(
+                            Icons.arrow_forward_ios,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 6,
+                    ),
+                    CommanText(
+                      text: '03 Addresses',
+                      fontSize: 12,
+                      weight: FontWeight.w400,
+                      color: Color(0xff909090),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+              height: 80,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Color(0xffFFFFFF),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 18,
+                  left: 19,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        CommanText(
+                          text: 'Payment Method',
+                          fontSize: 18,
+                          weight: FontWeight.w600,
+                          color: Color(0xff242424),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 155,
+                          ),
+                          child: Icon(
+                            Icons.arrow_forward_ios,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 6,
+                    ),
+                    CommanText(
+                      text: 'You have 2 cards',
+                      fontSize: 12,
+                      weight: FontWeight.w400,
+                      color: Color(0xff909090),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+              height: 80,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Color(0xffFFFFFF),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 18,
+                  left: 19,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        CommanText(
+                          text: 'My reviews',
+                          fontSize: 18,
+                          weight: FontWeight.w600,
+                          color: Color(0xff242424),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 210,
+                          ),
+                          child: Icon(
+                            Icons.arrow_forward_ios,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 6,
+                    ),
+                    CommanText(
+                      text: 'Reviews for 5 items',
+                      fontSize: 12,
+                      weight: FontWeight.w400,
+                      color: Color(0xff909090),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+              height: 80,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Color(0xffFFFFFF),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 18,
+                  left: 19,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        CommanText(
+                          text: 'Setting',
+                          fontSize: 18,
+                          weight: FontWeight.w600,
+                          color: Color(0xff242424),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 250,
+                          ),
+                          child: Icon(
+                            Icons.arrow_forward_ios,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 6,
+                    ),
+                    CommanText(
+                      text: 'Notification, Password, FAQ, Contact',
+                      fontSize: 12,
+                      weight: FontWeight.w400,
+                      color: Color(0xff909090),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
